@@ -2,6 +2,17 @@
 
 A ecommerce app
 
+## Features
+
+- **User**: User can register, login, logout, update password, verify username, update profile and update password.
+
+- **Bookings**: User can request for a booking and check his booking Status.
+
+- **Rooms**: Get available room, search room by status such as suite type, price and maximum guest, check all available
+  rooms and update rooms.
+
+- **Profile**: Get user profile, update password and delete user.
+
 ## Built With:
 
 - JavaScript

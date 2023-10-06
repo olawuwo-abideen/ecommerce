@@ -1,0 +1,39 @@
+[
+    {
+      "name": "MacBook Pro",
+      "price": 2150000,
+      "image": "https://ng.jumia.is/unsafe/fit-in/680x680/filters:fill(white)/product/02/6997032/1.jpg?3239",
+      "colors": ["#ff0000", "#00ff00", "#0000ff"],
+      "company": "jumia",
+      "description": "Built for all types of creatives, including photographers, filmmakers, 3D artists, music producers, developers, and more, the space gray Apple 16 MacBook Pro is the ultimate pro mobile workstation for the ultimate user",
+      "category": "electronic"
+    },
+    {
+      "name": "Samsung GALAXY S23 ULTRA 5G",
+      "price": 1136945,
+      "image": "https://ng.jumia.is/unsafe/fit-in/500x500/filters:fill(white)/product/41/6244942/1.jpg?2243",
+      "colors": ["#000", "#ffb900"],
+      "company": "jumia",
+      "description": "FeaturesCapture the night, even in low lightReady to own the night? Whether you're headed to a concert or a romantic night out, there's no such thing as bad lighting with Night Mode. Galaxy S23 Ultra lets you capture epic content in any setting with stunning Nightography.",
+      "category": "electronic"
+    },
+    {
+      "name": "Djack Powerful 3.1CH Bluetooth Home Theatre System 303 + Power Surge",
+      "price": 33700,
+      "image": "https://www-konga-com-res.cloudinary.com/w_auto,f_auto,fl_lossy,dpr_auto,q_auto/media/catalog/product/P/o/Powerful-3-1CH-Bluetooth-Home-Theatre-System-303-Power-Surge-7612492.jpg",
+      "colors": ["#000", "#00ff00", "#0000ff"],
+      "company": "konga",
+      "description": "Occupy your space and life whether for indoor family entertainment or outdoor occasions with the Djack DJ-303 Home Theatre System. Designed for optimum performance and long-term durability. This is how you get your groove on!",
+      "category": "electronic"
+    },
+    {
+      "name": "Leather Wrist Watch For Men Black",
+      "price": 23999,
+      "image": "https://www-konga-com-res.cloudinary.com/w_auto,f_auto,fl_lossy,dpr_auto,q_auto/media/catalog/product/P/Q/167142_1658414958.jpg",
+      "colors": ["#0000ff", "#000"],
+      "company": "konga",
+      "description": "Features and specifications:It is a luxury business watch made of stainless steel, with comfortable wearing. It is with quartz battery, stable working. This Watch Can match with all styles. It is the perfect gift for your boyfriend, father, husband, etc. Watch is with 30m . It means you can wear it when wash hands, but better not with swim and warm bath.",
+      "category": "clothing accessory"
+    }
+  ]
+  

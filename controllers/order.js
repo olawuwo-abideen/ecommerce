@@ -1,11 +1,11 @@
 const Order = require('../models/order');
-const Product = require('../models/Product');
+const Product = require('../models/products');
 
 const { StatusCodes } = require('http-status-codes');
 const CustomError = require('../errors');
 const { checkPermissions } = require('../utils');
 
-const fakeStripeAPI = async ({ amount, currency }) => {
+const StripeAPI = async ({ amount, currency }) => {
   const client_secret = 'someRandomValue';
   return { client_secret, amount };
 };
@@ -48,9 +48,9 @@ const createOrder = async (req, res) => {
   // calculate total
   const total = tax + shippingFee + subtotal;
   // get client secret
-  const paymentIntent = await fakeStripeAPI({
+  const paymentIntent = await StripeAPI({
     amount: total,
-    currency: 'usd',
+    currency: 'ngn',
   });
 
   const order = await Order.create({

@@ -1,0 +1,30 @@
+[
+    {
+      "tax": 399,
+      "shippingFee": 499,
+      "items": [
+        {
+            "name": "MacBook Pro",
+            "price": 2150000,
+            "image": "https://ng.jumia.is/unsafe/fit-in/680x680/filters:fill(white)/product/02/6997032/1.jpg?3239",
+            "amount": 699,
+            "product": "6125ad3424d2bd09165a68c7"
+
+        }
+      ]
+    },
+    {
+      "tax": 499,
+      "shippingFee": 799,
+      "items": [
+        {
+            "name": "Leather Wrist Watch For Men Black",
+            "price": 23999,
+            "image": "https://www-konga-com-res.cloudinary.com/w_auto,f_auto,fl_lossy,dpr_auto,q_auto/media/catalog/product/P/Q/167142_1658414958.jpg",
+            "amount": 200,
+            "product": "6129ad3424d2bd09165a68c7"
+        }
+      ]
+    }
+  ]
+  

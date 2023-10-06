@@ -16,11 +16,13 @@ const mongoSanitize = require('express-mongo-sanitize');
 
 
 //Database
-const connectDB = require('./db/connect');
+const connectDB = require('./database/connect');
 
 
 // middleware
 app.use(express.json());
+const notFoundMiddleware = require('./middleware/not-found');
+const errorHandlerMiddleware = require('./middleware/error-handler');
 
 // routes
 
@@ -34,9 +36,7 @@ const productRouter = require('./routes/productRoutes');
 const reviewRouter = require('./routes/reviewRoutes');
 const orderRouter = require('./routes/orderRoutes');
 
-// middleware
-const notFoundMiddleware = require('./middleware/not-found');
-const errorHandlerMiddleware = require('./middleware/error-handler');
+
 
 app.set('trust proxy', 1);
 app.use(
@@ -52,6 +52,9 @@ app.use(mongoSanitize());
 
 app.use(express.json());
 app.use(cookieParser(process.env.JWT_SECRET));
+
+app.use(express.static('./public'));
+app.use(fileUpload());
 
 app.use('/api/v1/auth', authRouter);
 app.use('/api/v1/users', userRouter);

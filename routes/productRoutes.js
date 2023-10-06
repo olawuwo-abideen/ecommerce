@@ -14,7 +14,7 @@ const {
   uploadImage,
 } = require('../controllers/product');
 
-const { getSingleProductReviews } = require('../controllers/reviewController');
+const { getSingleProductReviews } = require('../controllers/review');
 
 router
   .route('/')
