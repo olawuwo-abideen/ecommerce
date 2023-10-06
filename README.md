@@ -1,17 +1,16 @@
 # Ecommerce
 
-A ecommerce app
+An E-commerce app
 
 ## Features
 
-- **User**: User can register, login, logout, update password, verify username, update profile and update password.
+- **User**: User can register, login, logout, update profile, and update password.
 
-- **Bookings**: User can request for a booking and check his booking Status.
+- **Order**: User can update, get, and create Order.
 
-- **Rooms**: Get available room, search room by status such as suite type, price and maximum guest, check all available
-  rooms and update rooms.
+- **Products**: Admin can update, get, and create Product.
 
-- **Profile**: Get user profile, update password and delete user.
+- **Review**: User can update, get, and create Reviews.
 
 ## Built With:
 
@@ -30,7 +29,6 @@ A ecommerce app
 - jsonwebtoken
 - http-status-code
 - morgan
-
 
 ## Installation
 
@@ -63,6 +61,12 @@ npm start
 
 ```
 
+Set up the environment variables:
+
+Create the .env file and setup the MongoDB URL.
+
+The server will start running on the specified port (default: 3000) and establish a connection to the MongoDB database.
+
 This will start the app and set it up to listen for incoming connections on port 3000. Open up your browser of choice
 and go to the url
 
@@ -73,6 +77,27 @@ http://localhost:3000
 ```
 
 to start using the app.
+
+## API Endpoints
+
+The following API endpoints are available:
+
+- BaseUrl https://localhost:3000/
+
+- `POST /api/v1/register` - Register a new user
+- `POST /api/v1/login` - User login
+- `GET /api/v1/logout` - User logout
+- `GET /api/v1/showMe` - Show authenticated user
+- `PATCH /api/v1/updateUser` - Update User Profile
+- `PATCH /api/v1/updateUserPassword` - User update Password
+
+* `GET /api/v1/showAllMyOrders` - Show all user order
+* `GET /api/v1/:id` - Get an order
+* `PATCH /api/v1/:id` - update an order
+
+- `GET /api/v1/:id/reviews` - Get user review
+- `PATCH /api/v1/:id/reviews` -Update user review
+- `DELETE /api/v1/:id/reviews` - Delete user review
 
 ## 🤝 Contributing
 
