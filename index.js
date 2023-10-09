@@ -10,7 +10,6 @@ const cookieParser = require('cookie-parser');
 const fileUpload = require('express-fileupload');
 const rateLimiter = require('express-rate-limit');
 const helmet = require('helmet');
-const xss = require('xss-clean');
 const cors = require('cors');
 const mongoSanitize = require('express-mongo-sanitize');
 
@@ -27,7 +26,7 @@ const errorHandlerMiddleware = require('./middleware/error-handler');
 // routes
 
 app.get('/', (req, res) => {
-  res.send('<h1>ecommerce API</h1>');
+  res.send('<h1>Ecommerce api</h1>');
 });
 
 const authRouter = require('./routes/authRoutes');
@@ -47,7 +46,6 @@ app.use(
 );
 app.use(helmet());
 app.use(cors());
-app.use(xss());
 app.use(mongoSanitize());
 
 app.use(express.json());

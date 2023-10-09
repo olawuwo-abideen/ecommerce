@@ -40,16 +40,48 @@ const login = async (req, res) => {
 
   res.status(StatusCodes.OK).json({ user: tokenUser });
 };
+
+
+const updateUser = async (req, res) => {
+  const { email, name, role } = req.body;
+  if (!email || !name || ! role) {
+    throw new BadRequest('Please provide all values');
+  }
+  const user = await User.findOne({ email });
+
+  user.email = email;
+  user.name = name;
+  user.role = role;
+
+
+  await user.save();
+  const tokenUser = createTokenUser(user)
+  res.status(StatusCodes.OK).json({
+    user: {
+      email: user.email,
+      name: user.name,
+      role: user.role,
+      tokenUser,
+    },
+  });
+};
+
 const logout = async (req, res) => {
-  res.cookie('token', 'logout', {
+  res.cookie('tokenUser', 'logout', {
     httpOnly: true,
     expires: new Date(Date.now() + 1000),
   });
   res.status(StatusCodes.OK).json({ msg: 'user logged out!' });
 };
 
+
+
+
+
 module.exports = {
   register,
   login,
+  updateUser,
   logout,
+ 
 };
