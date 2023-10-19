@@ -1,6 +1,5 @@
 const Order = require('../models/order');
 const Product = require('../models/products');
-
 const { StatusCodes } = require('http-status-codes');
 const CustomError = require('../errors');
 const { checkPermissions } = require('../utils');
