@@ -104,7 +104,7 @@ The following API endpoints are available:
 
 Contributions, issues, and feature requests are welcome!
 
-Feel free to check the [issues page](https://github.com/Olawuwo-Abideen/ecommerce/issues).
+Feel free to check the [issues page](https://github.com/olawuwo-abideen/ecommerce/issues).
 
 ## Authors
 
