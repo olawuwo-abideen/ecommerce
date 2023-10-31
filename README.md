@@ -1,6 +1,7 @@
 # Ecommerce
 
-An E-commerce app
+Backend to an e-commerce platform that empowers businesses to sell products online and enables customers to login, browse, shop, give reviews and make secure online purchases. This
+application aims to provide a seamless shopping experience with a focus on user-friendly design, product management, and payment processing.
 
 ## Features
 
